@@ -218,6 +218,9 @@ debug.stagefright.omx_default_rank=0
 # Pre-rendering
 ro.vendor.perf.scroll_opt=true
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Property to enable/disable PASR
 vendor.power.pasr.enabled=true
 
