@@ -19,11 +19,6 @@
     <string name="wake_gesture_title">抬手唤醒</string>
     <string name="wake_gesture_summary">抬手直接唤醒屏幕不使用息屏显示</string>
 
-    <!-- DC Dimming settings -->
-    <string name="dc_dimming_enable_title">防闪烁模式</string>
-    <string name="dc_dimming_enable_summary">全局直流调光，低亮度下防闪烁护眼</string>
-    <string name="dc_dimming_enable_summary_not_supported">当前内核不支持防闪烁模式</string>
-
     <!-- Thermal Profiles -->
     <string name="thermal_title">温控模式</string>
     <string name="thermal_summary">调整每个应用的偏好设置以获得最佳性能</string>

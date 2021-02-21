@@ -103,10 +103,6 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
-    # Allow system to modify dc dimming state
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl
-
     # Set doze mode permissions
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/doze_mode
