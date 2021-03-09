@@ -1099,4 +1099,7 @@
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
 
+    <!-- Whether Hearing Aid profile is supported -->
+    <bool name="config_hearing_aid_profile_supported">true</bool>
+
 </resources>
