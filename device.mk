@@ -27,6 +27,9 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/cepheus/cepheus-vendor.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 include build/make/target/product/iorap_large_memory_config.mk
 
 # Additional native libraries
