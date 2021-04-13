@@ -6,3 +6,7 @@ allow init adsprpcd_file:file mounton;
 allow init debugfs_tracing_debug:dir mounton;
 
 allow init property_type:file { append create getattr map open read relabelto rename setattr unlink write };
+
+# Allow init to read and write to vendor_sysfs_graphics
+allow init vendor_sysfs_graphics:dir search;
+allow init vendor_sysfs_graphics:file rw_file_perms;
