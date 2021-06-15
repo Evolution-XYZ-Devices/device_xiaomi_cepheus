@@ -15,7 +15,10 @@ android_app {
     privileged: true,
 
     static_libs: [
-        "org.pixelexperience.settings.resources",
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "org.lineageos.settings.resources",
+        "SettingsLib",
     ],
 
     optimize: {
