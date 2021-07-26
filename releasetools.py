@@ -17,6 +17,15 @@
 import common
 import re
 
+def FullOTA_InstallBegin(info):
+  input_zip = info.input_zip
+  AddImage(info, "RADIO", input_zip, "super_dummy.img", "/tmp/super_dummy.img");
+  flash_script = open("device/xiaomi/cepheus/partitions/flash_super_dummy.sh", 'r').read()
+  common.ZipWriteStr(info.output_zip, "install/bin/flash_super_dummy.sh", flash_script);
+  info.script.AppendExtra('package_extract_file("install/bin/flash_super_dummy.sh", "/tmp/flash_super_dummy.sh");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/flash_super_dummy.sh");')
+  return
+
 def FullOTA_InstallEnd(info):
   input_zip = info.input_zip
   OTA_InstallEnd(info, input_zip)
@@ -27,8 +36,8 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info, input_zip)
   return
 
-def AddImage(info, input_zip, basename, dest):
-  path = "IMAGES/" + basename
+def AddImage(info, dir, input_zip, basename, dest):
+  path = dir + "/" + basename
   if path not in input_zip.namelist():
     return
 
@@ -39,6 +48,6 @@ def AddImage(info, input_zip, basename, dest):
 
 def OTA_InstallEnd(info, input_zip):
   info.script.Print("Patching dtbo and vbmeta images...")
-  AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
-  AddImage(info, input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  AddImage(info, "IMAGES", input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
+  AddImage(info, "IMAGES", input_zip, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
