@@ -418,7 +418,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.pixel
+    android.hardware.thermal@2.0-service.xiaomi_cepheus
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
