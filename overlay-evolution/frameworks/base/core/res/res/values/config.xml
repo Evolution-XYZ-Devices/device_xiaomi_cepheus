@@ -40,4 +40,7 @@
     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
+
+    <!-- Night Light FOD -->
+    <bool name="disable_fod_night_light">true</bool>
 </resources>
