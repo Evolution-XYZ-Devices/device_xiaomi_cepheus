@@ -274,7 +274,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.cepheus
+    android.hardware.light@2.0-service.xiaomi_msmnile
 
 # Media
 PRODUCT_PACKAGES += \

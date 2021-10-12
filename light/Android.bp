@@ -15,12 +15,9 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.cepheus",
-    init_rc: ["hidl/android.hardware.light@2.0-service.cepheus.rc"],
-    srcs: [
-        "hidl/service.cpp",
-        "hidl/Light.cpp",
-    ],
+    name: "android.hardware.light@2.0-service.xiaomi_msmnile",
+    init_rc: ["android.hardware.light@2.0-service.xiaomi_msmnile.rc"],
+    srcs: ["service.cpp", "Light.cpp"],
     vendor: true,
     shared_libs: [
         "android.hardware.light@2.0",
@@ -29,24 +26,5 @@ cc_binary {
         "libhidlbase",
         "liblog",
         "libutils",
-    ],
-}
-
-cc_binary {
-    name: "android.hardware.lights-service.cepheus",
-    relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.lights.cepheus.rc"],
-    vintf_fragments: ["aidl/android.hardware.lights.cepheus.xml"],
-    vendor: true,
-    shared_libs: [
-        "libbase",
-        "liblog",
-        "libhardware",
-        "libbinder_ndk",
-        "android.hardware.light-V1-ndk_platform",
-    ],
-    srcs: [
-        "aidl/Lights.cpp",
-        "aidl/main.cpp",
     ],
 }
