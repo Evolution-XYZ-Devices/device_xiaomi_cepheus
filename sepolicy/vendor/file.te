@@ -30,8 +30,5 @@ type sysfs_msm_boot, fs_type, sysfs_type;
 # IR
 type ir_spi_device, dev_type, file_type;
 
-# Thermal
-type thermal_data_file, file_type, data_file_type;
-
 # Touch Panel
 type sysfs_touchpanel, sysfs_type, fs_type;
