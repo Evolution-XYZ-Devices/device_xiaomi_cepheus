@@ -190,11 +190,14 @@ VENDOR_SECURITY_PATCH := 2021-10-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmnile
-include device/qcom-LA.UM.10.3.r1-xxxxx-sdm845.0/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+SELINUX_IGNORE_NEVERALLOWS := true
+
 
 # USB
 TARGET_QTI_USB_SUPPORTS_AUDIO_ACCESSORY := true
