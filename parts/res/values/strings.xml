@@ -37,8 +37,4 @@
     <!-- Doze Brightness -->
     <string name="doze_brightness_title">Always on brightness</string>
     <string name="doze_brightness_summary">%s mode is enabled</string>
-
-    <!-- Refresh Rate -->
-    <string name="refresh_standard">Standard (60Hz)</string>
-    <string name="refresh_high_72">High (72Hz)</string>
 </resources>

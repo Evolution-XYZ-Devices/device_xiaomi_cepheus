@@ -37,7 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         PendingResult pendingResult = goAsync();
         DozeUtils.onBootCompleted(context);
-	RefreshUtils.startService(context);
+	RefreshUtils.initialize(context);
 
 	pendingResult.finish();
     }
