@@ -11,3 +11,6 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                               u:ob
 # NXP services
 vendor.nxp.nxpese::INxpEse                                                  u:object_r:nxpese_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                                  u:object_r:nxpnfc_hwservice:s0
+
+# Turbo adapter
+vendor.google.google_battery::IGoogleBattery                               u:object_r:hal_turbo_adapter_hwservice:s0 
