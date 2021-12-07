@@ -127,7 +127,6 @@ persist.vendor.dpmhalservice.enable=1
 # Display
 debug.cpurend.vsync=false
 debug.mdpcomp.logs=0
-debug.sf.disable_backpressure=0
 debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
