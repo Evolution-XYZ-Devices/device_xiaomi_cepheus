@@ -148,7 +148,6 @@ debug.egl.hw=0
 debug.renderengine.backend=skiaglthreaded
 debug.hwui.renderer=skiavk
 debug.mdpcomp.logs=0
-debug.sf.disable_backpressure=0
 debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_hwc_vds=1
 debug.sf.frame_rate_multiple_threshold=81
