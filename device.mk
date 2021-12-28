@@ -421,6 +421,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.xiaomi_cepheus \
     thermal_symlinks
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
