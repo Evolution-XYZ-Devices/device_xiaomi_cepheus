@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cepheus.mk
+    $(LOCAL_DIR)/spark_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cepheus-user \
-    aosp_cepheus-userdebug \
-    aosp_cepheus-eng
+    spark_cepheus-user \
+    spark_cepheus-userdebug \
+    spark_cepheus-eng
