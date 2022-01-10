@@ -63,7 +63,7 @@
         <service
             android:name=".display.DcDimmingTileService"
             android:icon="@drawable/ic_dc_tile"
-            android:label="@string/dc_dimming_enable_title"
+            android:label="@string/dc_dimming_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
@@ -76,14 +76,16 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
         </activity>
 
         <activity
             android:name=".display.DcDimmingSettingsActivity"
-            android:label="@string/dc_dimming_enable_title"
+            android:label="@string/dc_dimming_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -94,7 +96,7 @@
                 android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/dc_dimming_enable_summary" />
+                android:resource="@string/dc_dimming_text" />
         </activity>
 
         <activity

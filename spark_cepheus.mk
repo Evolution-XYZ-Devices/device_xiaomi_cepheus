@@ -30,6 +30,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Spark specific flags
 SPARK_BUILD_TYPE := OFFICIAL
 TARGET_BUILD_LAWNCHAIR := true
+WITH_GAPPS := true
 
 # Device identifier
 PRODUCT_NAME := spark_cepheus
