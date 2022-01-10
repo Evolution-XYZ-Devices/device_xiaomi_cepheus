@@ -19,4 +19,6 @@
         orientation. If zero, the value of rounded_corner_radius is used. -->
     <dimen name="rounded_corner_content_padding">16dp</dimen>
 
+    <!-- Recognizing fingerprint animation -->
+    <dimen name="udfps_animation_offset">40dp</dimen>
 </resources>
