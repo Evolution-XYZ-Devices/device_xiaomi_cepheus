@@ -13,4 +13,7 @@
 <resources>
     <!-- Use only if devices have variable intensity support for haptics-->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <!-- add spark maintainer string -->
+    <string name="spark_maintainer">tribual</string>
 </resources>
