@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 EVO_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
