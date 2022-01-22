@@ -21,8 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-OVERRIDE_PRODUCT_COMPRESSED_APEX := false
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
