@@ -4,9 +4,7 @@
         "target_path": "vendor/xiaomi/cepheus"
     },
     {
-   "repository" : "jjpprrrr/prelude-clang",
-   "target_path": "prebuilts/clang/host/linux-x86/clang-prelude",
-   "branch"     : "master",
-   "remote"     : "gitlab"
+        "repository": "android_kernel_xiaomi_cepheus_iron",
+        "target_path": "kernel/xiaomi/cepheus"
     }
 ]
