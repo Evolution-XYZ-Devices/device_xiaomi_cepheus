@@ -28,9 +28,7 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Spark specific flags
-SPARK_BUILD_TYPE := OFFICIAL
 TARGET_BUILD_LAWNCHAIR := true
-WITH_GAPPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifier
