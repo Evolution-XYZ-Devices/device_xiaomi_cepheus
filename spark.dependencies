@@ -4,7 +4,7 @@
         "target_path": "vendor/xiaomi/cepheus"
     },
     {
-        "repository": "android_kernel_xiaomi_cepheus_iron",
+        "repository": "android_kernel_xiaomi_cepheus",
         "target_path": "kernel/xiaomi/cepheus"
     }
 ]
