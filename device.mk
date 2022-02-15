@@ -374,6 +374,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.cepheus-libperfmgr \
