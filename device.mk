@@ -301,12 +301,18 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor \
     libavservices_minijail \
-    libavservices_minijail_32 \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor
+    libcodec2 \
+    libcodec2_hidl@1.0.vendor:64 \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_hidl_client@1.2 \
+    libcodec2-hidl-defaults \
+    libcodec2-hidl-client-defaults \
+    libcodec2-hidl-client-defaults@1.2 \
+    libcodec2-hidl-defaults@1.2 \
+    libcodec2_vndk.vendor  \
+    libdrm.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
