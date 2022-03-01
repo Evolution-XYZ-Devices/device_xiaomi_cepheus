@@ -24,6 +24,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.refreshrate.RefreshUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final boolean DEBUG = false;
@@ -36,6 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         PendingResult pendingResult = goAsync();
         DozeUtils.onBootCompleted(context);
+	RefreshUtils.startService(context);
 
 	pendingResult.finish();
     }
