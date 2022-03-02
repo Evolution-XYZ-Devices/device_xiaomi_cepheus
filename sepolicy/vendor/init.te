@@ -8,3 +8,5 @@ allow init debugfs_tracing_debug:dir mounton;
 # Allow init to read and write to vendor_sysfs_graphics
 allow init vendor_sysfs_graphics:dir search;
 allow init vendor_sysfs_graphics:file rw_file_perms;
+
+set_prop(vendor_init, vendor_power_prop)
