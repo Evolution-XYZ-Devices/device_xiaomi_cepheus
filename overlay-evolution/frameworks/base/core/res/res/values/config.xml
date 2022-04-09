@@ -43,4 +43,7 @@
 
     <!-- Whether to disable Night Light feature during UDFPS unlock -->
     <bool name="config_udfpsDisableNightLight">false</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
 </resources>
