@@ -104,6 +104,7 @@ iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # Bluetooth
+bluetooth.device.default_name=Xiaomi Mi 9
 persist.vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
