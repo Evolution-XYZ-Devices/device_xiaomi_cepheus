@@ -200,6 +200,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_RECOVERY_DTBO := true
