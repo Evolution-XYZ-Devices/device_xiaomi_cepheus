@@ -21,9 +21,9 @@
    "branch"     : "twelve"
  },
  {
-   "repository" : "Panchajanya1999/azure-clang",
-   "target_path": "prebuilts/clang/host/linux-x86/clang-azure",
-   "branch"     : "main",
+   "repository" : "varunhardgamer/trb_clang",
+   "target_path": "prebuilts/clang/host/linux-x86/clang-trb",
+   "branch"     : "15",
    "clone-depth": "1",
    "remote"     : "gitlab"
  }
