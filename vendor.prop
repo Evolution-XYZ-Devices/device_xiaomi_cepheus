@@ -129,7 +129,6 @@ debug.sdm.support_writeback=0
 debug.cpurend.vsync=false
 debug.egl.hw=0
 debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiavk
 debug.mdpcomp.logs=0
 debug.sf.disable_backpressure=0
 debug.sf.enable_egl_image_tracker=1
