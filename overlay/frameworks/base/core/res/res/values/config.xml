@@ -1105,8 +1105,6 @@
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">org.codeaurora.ims</string>
 
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">64</integer>
     <!-- Night display color temperature calibration -->
     <string-array name="config_nightDisplayColorTemperatureCoefficients">
         <!-- R a-coefficient --> <item>0.0</item>
