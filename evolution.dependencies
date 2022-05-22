@@ -2,23 +2,26 @@
  {
    "repository" : "vendor_xiaomi_cepheus",
    "target_path": "vendor/xiaomi/cepheus",
-   "branch"     : "twelve"
+   "branch"     : "twelve",
+   "remote"     : "gitlab"
  },
  {
    "repository" : "vendor_xiaomi_sdm845-common-extra",
    "target_path": "vendor/xiaomi/sdm845-common-extra",
-   "branch"     : "twelve"
+   "branch"     : "twelve",
+   "remote"     : "gitlab"
  },
  {
    "repository" : "kernel_xiaomi_cepheus",
    "target_path": "kernel/xiaomi/cepheus",
-   "branch"     : "twelve"
+   "branch"     : "12.1"
  },
  {
    "repository" : "vendor_xiaomi-firmware",
    "target_path": "vendor/xiaomi-firmware",
    "clone-depth": "1",
-   "branch"     : "twelve"
+   "branch"     : "twelve",
+   "remote"     : "gitlab"
  },
  {
    "repository" : "varunhardgamer/trb_clang",
