@@ -639,5 +639,5 @@
     <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- The default peak refresh rate. -->
-    <integer name="config_defaultPeakRefreshRate">72</integer>
+    <integer name="config_defaultPeakRefreshRate">60</integer>
 </resources>
