@@ -1118,4 +1118,10 @@
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
+     <!-- The default refresh rate. Cepheus manages this using the peak refresh rate setting, so set
+         this value to 0 so it has no effect. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- The default peak refresh rate. -->
+    <integer name="config_defaultPeakRefreshRate">72</integer>
 </resources>
