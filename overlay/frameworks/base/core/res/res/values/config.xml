@@ -1105,4 +1105,11 @@
     <!-- List of comma separated package names for which we the system will not show crash, ANR,
          etc. dialogs. -->
     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
+
+     <!-- The default refresh rate. Raphael manages this using the peak refresh rate setting, so set
+         this value to 0 so it has no effect. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- The default peak refresh rate. -->
+    <integer name="config_defaultPeakRefreshRate">72</integer>
 </resources>
