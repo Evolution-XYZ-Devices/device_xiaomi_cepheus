@@ -19,6 +19,10 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <!-- Battery Health -->
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/bms/charge_full_design</string>
+
     <!-- Use only if devices have variable intensity support for haptics-->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
 

@@ -5,3 +5,9 @@ allow system_app vendor_sysfs_graphics:file rw_file_perms;
 
 # Allow system_app to write thermal config
 allow system_app sysfs_thermal:file rw_file_perms;
+
+# Battery Health
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { read };
+allow system_app sysfs_battery_supply:file { open };
+allow system_app sysfs_battery_supply:file { getattr };
