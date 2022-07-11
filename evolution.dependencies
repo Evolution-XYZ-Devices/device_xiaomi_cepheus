@@ -5,6 +5,12 @@
    "branch"     : "snow"
  },
  {
+   "repository" : "vendor_xiaomi_sdm845-common-extra",
+   "target_path": "vendor/xiaomi/sdm845-common-extra",
+   "branch"     : "twelve",
+   "remote"     : "gitlab"
+ },
+ {
    "repository" : "kernel_xiaomi_cepheus",
    "target_path": "kernel/xiaomi/cepheus",
    "branch"     : "snow-retrofit-dynamic-wip"
@@ -17,9 +23,9 @@
    "remote"     : "gitlab"
  },
  {
-   "repository" : "varunhardgamer/trb_clang",
-   "target_path": "prebuilts/clang/host/linux-x86/clang-trb",
-   "branch"     : "15",
+   "repository" : "jjpprrrr/prelude_clang",
+   "target_path": "prebuilts/clang/host/linux-x86/clang-prelude",
+   "branch"     : "master",
    "clone-depth": "1",
    "remote"     : "gitlab"
  }
