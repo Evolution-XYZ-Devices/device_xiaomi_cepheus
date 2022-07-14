@@ -15,5 +15,5 @@
 
     <!-- ROM maintainer name -->
     <string name="build_maintainer_summary">Logan Developer</string>
-
+    <string name="build_maintainer_telegram">https://t.me/logaming</string>
 </resources>
