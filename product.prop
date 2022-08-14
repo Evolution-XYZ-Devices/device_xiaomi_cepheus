@@ -10,9 +10,6 @@ ro.bluetooth.library_name=libbluetooth_qti.so
 ro.bluetooth.wipower=false
 vendor.bluetooth.soc=cherokee
 
-# Blur
-ro.sf.blurs_are_expensive=1
-
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.android.MGC
 persist.camera.sat.fallback.dist.d=10
