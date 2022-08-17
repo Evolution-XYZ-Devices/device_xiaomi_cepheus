@@ -27,8 +27,6 @@ $(call inherit-product, vendor/xiaomi/cepheus/cepheus-vendor.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-include build/make/target/product/iorap_large_memory_config.mk
-
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
