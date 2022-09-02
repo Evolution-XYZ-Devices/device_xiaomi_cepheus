@@ -32,10 +32,6 @@ iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
-# LMK tuning
-ro.lmk.filecache_min_kb=153600
-ro.lmk.stall_limit_critical=40
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
