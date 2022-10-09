@@ -1,7 +1,7 @@
 # Bluetooth
 persist.bluetooth.a2dp_aac.vbr_supported=true
 persist.vendor.btstack.enable.twsplussho=true
-bluetooth.profile.asha.central.enabled=false
+bluetooth.profile.asha.central.enabled=true
 
 # Blur
 ro.sf.blurs_are_expensive=1
