@@ -31,8 +31,8 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                                                        u:object_r:public_adsprpcd_file:s0
 
-# Insmod
-/vendor/bin/init\.insmod\.sh                                                                           u:object_r:init-insmod-sh_exec:s0
+# HBM
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm                                             u:object_r:vendor_sysfs_hbm:s0
 
 # IR
 /dev/ir_spi                                                                                            u:object_r:ir_spi_device:s0
