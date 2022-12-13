@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
