@@ -139,6 +139,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/bin/remosaic_daemon
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libSNPE.so
 vendor/lib64/lib_denoiser3.so
 vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
