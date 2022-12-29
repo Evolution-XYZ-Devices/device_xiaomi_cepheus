@@ -21,4 +21,7 @@
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
     <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
 
+    <!-- Whether build status should be shown or not. -->
+    <bool name="config_show_build_status">true</bool>
+
 </resources>
