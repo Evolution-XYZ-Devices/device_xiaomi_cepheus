@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common EvolutionX stuff.
+EVO_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
