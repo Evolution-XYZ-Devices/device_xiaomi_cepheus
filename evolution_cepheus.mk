@@ -35,6 +35,3 @@ PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Include firmware
-$(call inherit-product, vendor/xiaomi-firmware/cepheus/firmware.mk)
