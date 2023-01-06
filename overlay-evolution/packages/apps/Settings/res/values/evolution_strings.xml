@@ -18,6 +18,6 @@
     <string name="build_maintainer_telegram">https://t.me/chematelegram</string>
 
     <!-- Build status -->
-    <string name="build_status_summary">Unofficial Test</string>
+    <string name="build_status_summary">Stable</string>
 
 </resources>
