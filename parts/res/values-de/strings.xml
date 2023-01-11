@@ -13,25 +13,6 @@
     <!-- Device specific settings -->
     <string name="device_settings_app_name">Erweiterte Einstellungen</string>
 
-    <!-- Dirac settings -->
-    <string name="dirac_title">Dirac Klangverbesserer</string>
-    <string name="dirac_enable">Dirac verwenden</string>
-    <string name="dirac_summary">Optimierung der Audioqualität</string>
-    <string name="dirac_headset_title">Kopfhörer-Typ</string>
-    <string name="dirac_preset_title">Klang-Voreinstellung</string>
-
-    <!-- Dirac settings: Hi-Fi -->
-    <string name="dirac_hifi_enable_title">Hi-Fi aktivieren</string>
-    <string name="dirac_hifi_title">Hi-Fi</string>
-    <string name="dirac_hifi_summary">Verringerung von Rauschen und Verzerrungen und Verbesserung der Audioqualität</string>
-
-    <!-- Dirac settings: Headset types -->
-    <string name="dirac_headset_default">Standard</string>
-
-    <!-- Dirac settings: Equalizer presets -->
-    <string name="dirac_preset_default">Standard</string>
-    <string name="dirac_preset_classical">Klassisch</string>
-
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Lautsprecher reinigen</string>
     <string name="clear_speaker_enable">Lautsprecherreinigung aktivieren</string>
