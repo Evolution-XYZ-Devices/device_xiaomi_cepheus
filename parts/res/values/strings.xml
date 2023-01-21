@@ -34,17 +34,11 @@
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_text">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.</string>
 
-    <!-- Ambient settings -->
-    <string name="ambient_enable">Use ambient display</string>
-    <string name="ambient_display_title">Ambient display</string>
-
+    <!-- Doze Brightness -->
     <string name="doze_brightness_title">Always on brightness</string>
     <string name="doze_brightness_summary">%s mode is enabled</string>
 
     <!-- Refresh Rate -->
-    <string name="refresh_title">Refresh Rate per-app</string>
-    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
-    <string name="refresh_default">Default</string>
     <string name="refresh_standard">Standard (60Hz)</string>
     <string name="refresh_high_72">High (72Hz)</string>
 </resources>
