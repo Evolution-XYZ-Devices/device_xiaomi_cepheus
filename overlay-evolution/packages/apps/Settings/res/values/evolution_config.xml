@@ -24,4 +24,6 @@
     <!-- Whether build status should be shown or not. -->
     <bool name="config_show_build_status">true</bool>
 
+    <!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">true</bool>
 </resources>
