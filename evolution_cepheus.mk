@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 EVO_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_MINI_GAPPS := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier
