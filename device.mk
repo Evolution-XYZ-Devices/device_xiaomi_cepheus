@@ -97,9 +97,20 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
+
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor \
     libdng_sdk.vendor \
-    libshim_megvii \
+    libgui_vendor \
+    libstdc++.vendor \
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
     GCamMGC
+
+PRODUCT_PACKAGES += \
+    libshim_megvii
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
