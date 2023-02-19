@@ -1094,4 +1094,7 @@
     <!-- Maximum color temperature, in Kelvin, supported by Night display.
          Setting this to track the default color temperature value (currently 6500K). -->
     <integer name="config_nightDisplayColorTemperatureMax">6500</integer>
+
+    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 </resources>
