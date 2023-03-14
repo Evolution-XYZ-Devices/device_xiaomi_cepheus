@@ -115,8 +115,6 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             }
 
             mDevice->extCmd(mDevice, COMMAND_NIT, readBool(fd) ? PARAM_NIT_FOD : PARAM_NIT_NONE);
-
-            set(FOD_STATUS_PATH, readBool(fd) ? FOD_STATUS_ON : FOD_STATUS_OFF);
         }
     }).detach();
 }
@@ -248,6 +246,7 @@ Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69
 }
 
 Return<RequestStatus> BiometricsFingerprint::postEnroll() {
+    onFingerUp();
     return ErrorFilter(mDevice->post_enroll(mDevice));
 }
 
@@ -256,8 +255,6 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
-    set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-    set(DIMLAYER_HBM_PATH, DIMLAYER_HBM_OFF);
     return ErrorFilter(mDevice->cancel(mDevice));
 }
 
@@ -399,15 +396,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
             int32_t vendorCode = 0;
             FingerprintAcquiredInfo result =
                 VendorAcquiredFilter(msg->data.acquired.acquired_info, &vendorCode);
-            ALOGD("onAcquired(result: %d, vendorCode: %d)", result, vendorCode);
-            // vendorCode 21 means waiting for fingerprint
-            // result 0 means fingerprint detected successfully
-            if (vendorCode == 21 || vendorCode == 22 || vendorCode == 23) {
-                set(FOD_STATUS_PATH, FOD_STATUS_ON);
-            } else if (static_cast<int32_t>(result) == 0 || static_cast<int32_t>(result) == 3 || vendorCode == 44 || vendorCode == 25) {
-                set(DIMLAYER_HBM_PATH, DIMLAYER_HBM_OFF);
-                set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-            }
+            ALOGD("onAcquired(%d)", result);
             if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
                 ALOGE("failed to invoke fingerprint onAcquired callback");
             }
@@ -446,6 +435,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
                          .isOk()) {
                     ALOGE("failed to invoke fingerprint onAuthenticated callback");
                 }
+                getInstance()->onFingerUp();
             } else {
                 // Not a recognized fingerprint
                 if (!thisPtr->mClientCallback
