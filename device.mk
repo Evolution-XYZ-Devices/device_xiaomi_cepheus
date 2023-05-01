@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    GCamMGC
 
 PRODUCT_PACKAGES += \
     libshim_megvii
