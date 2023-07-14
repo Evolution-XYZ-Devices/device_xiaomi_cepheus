@@ -12,9 +12,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">true</bool>
-
     <!-- Battery health -->
     <bool name="config_supportBatteryHealth">true</bool>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
