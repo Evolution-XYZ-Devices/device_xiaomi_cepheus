@@ -1,9 +1,6 @@
 # BT ChannelAvoidance
 vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance               u:object_r:hal_bt_channel_avoidance_hwservice:s0
 
-# Dolby
-vendor.dolby.hardware.dms::IDms                                             u:object_r:hal_dms_hwservice:s0
-
 # Cam postproc
 vendor.xiaomi.hardware.campostproc::IMiPostProcService                                   u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
 
