@@ -100,6 +100,10 @@ on post-fs-data
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on boot
     start vendor.rmt_storage
     start vendor.rfs_access
