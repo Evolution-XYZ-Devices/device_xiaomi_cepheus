@@ -317,6 +317,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
 # MiuiCamera
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
+TARGET_INCLUDES_MIUI_CAMERA := true
+TARGET_USES_MIUI_CAMERA := true
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Network
