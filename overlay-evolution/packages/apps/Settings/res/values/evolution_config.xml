@@ -21,4 +21,6 @@
     <!-- Whether build status should be shown or not. -->
     <bool name="config_show_build_status">true</bool>
 
+    <!-- Whether to enable Lineage Fast Charge Prefernece -->
+    <bool name="config_lineageFastChargeSupported">true</bool>
 </resources>
