@@ -10,13 +10,13 @@
   {
     "repository": "chematelegram/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
-    "branch": "tiramisu-5.0-cepheus",
+    "branch": "udc-5.0-cepheus",
     "remote": "gitlab"
   },
   {
-    "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-r487747c",
-    "branch": "13.0",
+    "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r498229b",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r498229b",
+    "branch": "14.0",
     "remote": "gitlab"
   }
 ]
