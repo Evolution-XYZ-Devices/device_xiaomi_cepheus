@@ -27,7 +27,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_QUICK_TAP := false
 
 # Device identifier
 PRODUCT_NAME := evolution_cepheus
