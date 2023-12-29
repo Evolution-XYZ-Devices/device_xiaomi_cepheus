@@ -21,4 +21,7 @@
 
     <!-- Recognizing fingerprint animation -->
     <dimen name="udfps_animation_offset">4dp</dimen>
+
+    <!-- The width/height of the unlock icon view on keyguard. -->
+    <dimen name="keyguard_lock_height">155dp</dimen>
 </resources>
