@@ -5,8 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiOverlay",
-    theme: "WifiOverlay",
-    sdk_version: "current",
+    name: "SettingsResCepheus",
+    theme: "SettingsResCepheus",
     product_specific: true,
 }
