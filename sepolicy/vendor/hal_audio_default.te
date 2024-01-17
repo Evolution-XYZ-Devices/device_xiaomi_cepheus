@@ -15,3 +15,7 @@ userdebug_or_eng(`
 ');
 # Ignore in user builds
 dontaudit hal_audio_default vendor_diag_device:chr_file rw_file_perms;
+
+# Dolby
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)
