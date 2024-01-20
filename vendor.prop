@@ -258,7 +258,7 @@ persist.vendor.uspsensor=default
 persist.device_config.runtime_native.usap_pool_enabled=true
 
 # SoC
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM8150
 
 # System
