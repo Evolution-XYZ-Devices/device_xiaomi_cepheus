@@ -185,6 +185,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fastcharge
 PRODUCT_PACKAGES += \
     vendor.lineage.fastcharge@1.0-service.xiaomi_cepheus
