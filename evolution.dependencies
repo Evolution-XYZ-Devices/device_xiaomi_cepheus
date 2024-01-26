@@ -11,7 +11,7 @@
     "repository": "chematelegram/vendor_xiaomi_miuicamera",
     "target_path": "vendor/xiaomi/miuicamera",
     "branch": "udc-5.0-cepheus",
-    "remote": "gitlab"
+    "remote": "github"
   },
   {
     "repository": "crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r498229b",
